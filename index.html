@@ -4,42 +4,46 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>컬렉트 DGC 아울렛 판매현황</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,"Noto Sans KR",sans-serif;background:#f0f2f5;color:#222;min-height:100vh}
-.wrap{max-width:1000px;margin:0 auto;padding:28px 16px}
-h1{font-size:20px;font-weight:700;margin-bottom:4px}
-.sub{font-size:12px;color:#888;margin-bottom:22px}
-table{width:100%;border-collapse:collapse;background:#fff;border-radius:10px;overflow:hidden;
-       box-shadow:0 2px 8px rgba(0,0,0,.08)}
-th{background:#16213e;color:#fff;padding:11px 14px;font-size:13px;font-weight:600;
-    white-space:nowrap}
+body{font-family:"Noto Sans KR","Montserrat",-apple-system,sans-serif;background:#FFFFFF;color:#333333;min-height:100vh;letter-spacing:-0.2px}
+.wrap{max-width:1200px;margin:0 auto;padding:32px 20px}
+.brand{font-family:"Montserrat",sans-serif;font-size:22px;font-weight:700;color:#c80a1e;letter-spacing:-0.5px;margin-bottom:12px}
+h1{font-family:"Noto Sans KR","Montserrat",sans-serif;font-size:24px;font-weight:600;color:#333333;margin-bottom:6px;letter-spacing:-0.3px}
+.sub{font-size:14px;color:#999999;margin-bottom:8px;font-weight:400}
+.notice{color:#c80a1e;font-weight:700;font-size:13px;margin-bottom:20px}
+table{width:100%;border-collapse:collapse;background:#FFFFFF;border:1px solid #E0E0E0}
+th{background:#F8F8F8;color:#333333;padding:12px 14px;font-size:13px;font-weight:500;white-space:nowrap;border-bottom:1px solid #E0E0E0;text-align:left;letter-spacing:-0.2px}
 th.num,td.num{text-align:right}
-td{padding:10px 14px;font-size:13px;border-bottom:1px solid #f2f2f2;vertical-align:middle}
+td{padding:12px 14px;font-size:14px;border-bottom:1px solid #E0E0E0;vertical-align:middle;color:#333333}
 tr:last-child td{border-bottom:none}
-td.code{font-family:monospace;font-weight:700;font-size:12px;color:#444}
-td.color{font-size:12px;color:#666}
-td.name{line-height:1.45;max-width:320px}
-td.sellable{font-weight:700;font-size:15px}
-tr.set-row{cursor:pointer}
-tr.set-row:hover td{background:#f3f6fb}
-.toggle{display:inline-block;width:12px;color:#999;font-size:10px;transition:transform .15s}
-.toggle.open{transform:rotate(90deg);color:#16213e}
-tr.detail-row td{background:#fafbfd;padding:0;border-bottom:1px solid #e5e9f0}
-.detail-cell{padding:6px 14px 10px 14px !important}
-table.sub-table{width:100%;background:#fff;border-radius:6px;box-shadow:none;border:1px solid #e5e9f0;margin-top:4px}
-table.sub-table th{background:#e9edf3;color:#333;font-size:12px;font-weight:600;padding:7px 10px}
-table.sub-table td{font-size:12px;padding:6px 10px}
-table.sub-table td.sub-code{font-family:monospace;font-weight:700;color:#444}
-table.sub-table td.sub-name{line-height:1.4;max-width:280px}
+td.code{font-family:"Montserrat",monospace;font-weight:700;font-size:13px;color:#333333;letter-spacing:0}
+td.color{font-size:13px;color:#999999}
+td.name{line-height:1.6;max-width:380px}
+td.sellable{font-family:"Montserrat",sans-serif;font-weight:700;font-size:18px;color:#c80a1e}
+tr.set-row{cursor:pointer;transition:background 0.2s}
+tr.set-row:hover td{background:#F8F8F8}
+.toggle{display:inline-block;width:12px;color:#999999;font-size:10px;transition:transform .2s;margin-right:4px}
+.toggle.open{transform:rotate(90deg);color:#c80a1e}
+tr.detail-row td{background:#F8F8F8;padding:0;border-bottom:1px solid #E0E0E0}
+.detail-cell{padding:8px 14px 14px 14px !important}
+table.sub-table{width:100%;background:#FFFFFF;border:1px solid #E0E0E0;margin-top:6px}
+table.sub-table th{background:#FFFFFF;color:#999999;font-size:12px;font-weight:400;padding:8px 10px;border-bottom:1px solid #E0E0E0;letter-spacing:0}
+table.sub-table td{font-size:13px;padding:8px 10px;color:#333333}
+table.sub-table td.sub-code{font-family:"Montserrat",monospace;font-weight:700;color:#333333}
+table.sub-table td.sub-name{line-height:1.5;max-width:320px}
 table.sub-table td.center{text-align:center}
 </style>
 </head>
 <body>
 <div class="wrap">
+  <div class="brand">iloom</div>
   <h1>컬렉트 DGC 아울렛 판매현황</h1>
-  <p class="sub">업데이트: 2026-04-20 13:04</p>
-  <p style="color:#cc0000;font-weight:900;font-size:13px;margin-bottom:16px;">본 수량은 실시간이 아닌 생성 기준(2026-04-20 13:04)으로 산출된 수량입니다.</p>
+  <p class="sub">업데이트: 2026-04-20 13:18</p>
+  <p class="notice">본 수량은 실시간이 아닌 생성 기준(2026-04-20 13:18)으로 산출된 수량입니다.</p>
   <table>
     <thead>
       <tr>
